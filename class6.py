@@ -1,17 +1,21 @@
 class Music:
+    __artist = ""
+    __title = ""
+    __album = ""
+    __artist = ""
+    __title = ""
+    __album = ""
+    __trackLength = 0
+    __genre = ""
+    __trackNumber = 0
+    __size = 0
+    __lyrics = ""
+    __isFavourite = False
+
     def __init__(self, title, artist, album):
         self.__artist = artist
         self.__title = title
         self.__album = album
-        self.__artist = ""
-        self.__title = ""
-        self.__album = ""
-        self.__trackLength = 0
-        self.__genre = ""
-        self.__trackNumber = 0
-        self.__size = 0
-        self.__lyrics = ""
-        self.__isFavourite = False
 
     def printDetails(self):
         print("Artist: ", self.__artist)
@@ -30,7 +34,7 @@ class Music:
         self.__isFavourite = True
 
     def isFavourite(self):
-        return self.isFavourite
+        return self.__isFavourite
 
 
 m1 = Music("Thunder", "Imagine Dragons", "Evolve")
@@ -43,9 +47,5 @@ m2.play()
 #print(m2.__artist)
 m1.printDetails()
 m3.SetFavorite()
-print(m3.isFavourite)
-
-
-
-
+print(m3.isFavourite())
 
