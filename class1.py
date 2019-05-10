@@ -1,7 +1,8 @@
+#A simple class
 class Snake:
     name = None
     color = None
-    length = 10
+    length = 10 #default value
 
 s1 = Snake()
 s1.name = "python"
